@@ -1,0 +1,20 @@
+{
+	"plugins": ["stylelint-scss", "stylelint-less"],
+	"overrides": [
+		{
+			"files": ["**/*.scss"],
+			"extends": ["stylelint-config-recommended-scss"],
+			"rules": {
+				"scss/load-no-partial-leading-underscore": null
+			}
+		},
+		{
+			"files": ["**/*.less"],
+			"extends": ["stylelint-config-recommended-less"],
+			"rules": {
+				"less/color-no-invalid-hex": null,
+				"less/no-duplicate-variables": null
+			}
+		}
+  	]
+}
