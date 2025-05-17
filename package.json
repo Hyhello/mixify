@@ -32,10 +32,6 @@
 			"type": "git",
 			"url": "git+https://github.com/Hyhello/mixify.git"
 	},
-	"publishConfig": {
-			"access": "public",
-			"registry": "https://registry.npmjs.org"
-	},
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
