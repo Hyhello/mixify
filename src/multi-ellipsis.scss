@@ -1,0 +1,9 @@
+// 多行文本溢出...
+@mixin multiEllipsis($line){
+    overflow : hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}

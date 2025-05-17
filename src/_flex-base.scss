@@ -1,0 +1,6 @@
+@mixin _flex-base($display, $baseItems, $baseFlow, $baseJustify) {
+	display: $display;
+	align-items: $baseItems;
+	flex-flow: $baseFlow;
+	justify-content: $baseJustify;
+}

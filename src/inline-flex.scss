@@ -1,0 +1,5 @@
+@import '_flex-base';
+
+@mixin inline-flex($baseItems: center, $baseFlow: column nowrap, $baseJustify: flex-start) {
+	@include _flex-base(inline-flex, $baseItems, $baseFlow, $baseJustify);
+}

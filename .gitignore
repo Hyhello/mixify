@@ -1,8 +1,8 @@
 .DS_Store
 .vscode/
 node_modules
-*.less
-*.scss
+/*.less
+/*.scss
 
 # local env files
 npm-debug.log*

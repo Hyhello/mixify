@@ -1,0 +1,11 @@
+@mixin border-dpr($border-width, $border-style, $border-color) {
+	border: $border-width $border-style $border-color;
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	  border: calc($border-width / 2) $border-style $border-color;
+	}
+
+	@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+	  border: calc($border-width / 3) $border-style $border-color;
+	}
+}
