@@ -1,6 +1,6 @@
 {
   "name": "mixify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mixify is a lightweight preprocessor for business development.",
   "scss": "./index.scss",
   "less": "./index.less",
