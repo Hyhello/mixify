@@ -2,4 +2,14 @@
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
     gap: $gap;
+	@supports not (display: grid) {
+		$half-gap: ($gap / 2);
+		display: flex;
+		flex-wrap: wrap;
+		margin: -$half-gap;
+		> * {
+			flex: 0 0 calc(100% / $columns - $gap);
+			margin: $half-gap;
+		}
+	}
 }
