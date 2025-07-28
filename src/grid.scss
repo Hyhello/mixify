@@ -3,7 +3,7 @@
     grid-template-columns: repeat($columns, 1fr);
     gap: $gap;
 	@supports not (display: grid) {
-		$half-gap: ($gap / 2);
+		$half-gap: calc($gap / 2);
 		display: flex;
 		flex-wrap: wrap;
 		margin: -$half-gap;

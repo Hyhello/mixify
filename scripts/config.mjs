@@ -49,7 +49,8 @@ export const PATTERN_LIST = Object.values({
 		pattern: /#\{@([^}]+?)\}/g,
 		replacement: '@{$1}',
 		order: 1
-	}
+	},
+	calc: { pattern: /(@[^{}]+?:\s*)calc\(([^)]+)\)/g, replacement: '$1($2)', order: 1 }
 })
 	.sort((a, b) => a.order - b.order)
 	.filter((item) => !item.disabled);

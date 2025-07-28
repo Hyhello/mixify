@@ -1,5 +1,5 @@
 // 多行文本溢出...
-@mixin multiEllipsis($line){
+@mixin multi-ellipsis($line){
     overflow : hidden;
     word-break: break-all;
     text-overflow: ellipsis;
